@@ -32,6 +32,7 @@
 <script>
 import store from './vuex/store'
 import { Tabbar, TabbarItem, Loading, ViewBox, XHeader } from './components'
+import Vconsole from 'vconsole'
 
 export default {
   components: {
@@ -39,7 +40,8 @@ export default {
     TabbarItem,
     Loading,
     ViewBox,
-    XHeader
+    XHeader,
+    Vconsole
   },
   store: store,
   vuex: {

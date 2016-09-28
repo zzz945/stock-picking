@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     classes () {
-      return [
+      let ret = [
         {
           weui_btn_disabled: this.disabled,
           weui_btn_mini: this.mini
@@ -25,6 +25,8 @@ export default {
         `weui_btn_${this.type}`,
         this.plain ? `weui_btn_plain_${this.type}` : ''
       ]
+      console.log('button classes=' + ret)
+      return ret
     }
   }
 }
