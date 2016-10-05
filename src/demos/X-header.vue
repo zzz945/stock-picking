@@ -12,7 +12,7 @@
     <br>
     <x-header>with left slot<a slot="left">Close</a></x-header>
     <br>
-    <x-header style="background-color:#000;">custom background color</x-header>
+    <x-header class="flat-header">flat header</x-header>
     <actionsheet :menus="menus" :show.sync="showMenus" show-cancel></actionsheet>
   </div>
 </template>

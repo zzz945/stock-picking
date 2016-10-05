@@ -5,7 +5,15 @@
 
 @color-wechat-green: #04BE02;
 
-@theme-color: #04BE02;
+@theme-color: #1abc9c;
+@theme-color-active: #16a085;
+@theme-color-assist: #34495e;
+@theme-color-assist-active: #1C2833;
+@theme-color-eye: #f1c40f;
+@theme-color-eye-active: #BF9B0B;
+@theme-color-text: #fff;
+@theme-color-text-active: #ecf0f1;
+@theme-color-disable: #ecf0f1;
 @opacity-disabled: 0.5;
 
 /**
@@ -38,7 +46,7 @@
 /**
 * Cell
 */
-@cell-label-color: #000;
+@cell-label-color: @theme-color-assist;
 
 /**
 * Mask
@@ -60,10 +68,10 @@
 /**
 * XHeader
 */
-@x-header-background-color: #35495e;
-@x-header-title-color: #fff;
-@x-header-text-color: #ccc;
-@x-header-arrow-color: #ccc;
+@x-header-background-color: @theme-color-assist-active;
+@x-header-title-color: @theme-color-text;
+@x-header-text-color: @theme-color-text;
+@x-header-arrow-color: @theme-color-text;
 
 /**
 * Timeline
@@ -85,7 +93,6 @@
 /**
 * Cell
 */
-@cell-body-label-color: #000;
 
 /**
 * Badge

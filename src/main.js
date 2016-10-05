@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from './App'
 
 import Wechat from './Wechat'
 import Yi from './yi'
@@ -94,6 +93,15 @@ import DeviceDemo from './demos/Device'
 import ToastPlugin from './plugins/toast'
 import AlertPlugin from './plugins/alert'
 
+// flatui demos
+import FButton from './flatui/demos/FButton'
+import FDivider from './flatui/demos/FDivider'
+import FlatuiDemo from './flatui/demos/Demo'
+
+// 最后加载，确保css继承生效
+import App from './App'
+import Home from './Home'
+
 const FastClick = require('fastclick')
 FastClick.attach(document.body)
 
@@ -150,9 +158,7 @@ sync(store, router)
 
 router.map({
   '/': {
-    component: function (resolve) {
-      require(['./Home'], resolve)
-    }
+    component: Home
   },
   '/demo/wechat': {
     component: Wechat
@@ -416,6 +422,15 @@ router.map({
   },
   '/component/popover': {
     component: Popover
+  },
+  '/flatui': {
+    component: FlatuiDemo
+  },
+  '/flatui/f-button': {
+    component: FButton
+  },
+  '/flatui/f-divider': {
+    component: FDivider
   }
 })
 

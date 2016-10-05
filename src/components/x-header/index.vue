@@ -65,7 +65,7 @@ export default {
   text-align: center;
   height: 40px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bold;
   width: auto;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -80,6 +80,7 @@ export default {
   top: 14px;
   display: block;
   font-size: 14px;
+  font-weight: bold;
   line-height: 21px;
   color: @x-header-text-color;
 }
@@ -110,7 +111,7 @@ export default {
     width: 12px;
     height: 12px;
     border: 1px solid @x-header-arrow-color;
-    border-width: 1px 0 0 1px;
+    border-width: 4px 0 0 4px;
     transform: rotate(315deg);
     top: 8px;
     left: 7px;
