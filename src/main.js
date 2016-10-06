@@ -94,6 +94,9 @@ import ToastPlugin from './plugins/toast'
 import AlertPlugin from './plugins/alert'
 
 // flatui demos
+import ZPagenav from 'vue-pagenav'
+Vue.use(ZPagenav)
+import FPageNav from './flatui/demos/FPageNav'
 import FButton from './flatui/demos/FButton'
 import FDivider from './flatui/demos/FDivider'
 import FlatuiDemo from './flatui/demos/Demo'
@@ -431,6 +434,9 @@ router.map({
   },
   '/flatui/f-divider': {
     component: FDivider
+  },
+  '/flatui/f-page-nav': {
+    component: FPageNav
   }
 })
 

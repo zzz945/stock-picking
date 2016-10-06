@@ -7,6 +7,9 @@
       <f-cell title="f-divider" link="flatui/f-divider">
         <span class="demo-icon" slot="icon">&#xe65d;</span>
       </f-cell>
+      <f-cell title="f-page-nav" link="flatui/f-page-nav">
+        <span class="demo-icon" slot="icon">&#xe65d;</span>
+      </f-cell>
     </f-group>
   </div>
 </template>

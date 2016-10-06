@@ -6,6 +6,7 @@ import { FTabbar, FTabbarItem } from './f-tabbar'
 import FCell from './f-cell'
 import FGroup from './f-group'
 import FInlineDesc from './f-inline-desc'
+import FPageNav from './f-page-nav'
 
 const VueFlatui = {
   FButton,
@@ -14,6 +15,7 @@ const VueFlatui = {
   FTabbarItem,
   FCell,
   FGroup,
-  FInlineDesc
+  FInlineDesc,
+  FPageNav
 }
 module.exports = VueFlatui

@@ -81,8 +81,6 @@ export default {
       if (/component/.test(this.route.path) && parts[2]) return parts[2]
     },
     isDemo () {
-      console.log(this.route.path)
-      console.log(/component|demo/.test(this.route.path))
       return /component|demo/.test(this.route.path)
     },
     isFlatuiDemo () {
