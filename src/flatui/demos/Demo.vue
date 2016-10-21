@@ -10,6 +10,12 @@
       <f-cell title="f-page-nav" link="flatui/f-page-nav">
         <span class="demo-icon" slot="icon">&#xe65d;</span>
       </f-cell>
+      <f-cell title="f-swipe-page" link="flatui/f-swipe-page">
+        <span class="demo-icon" slot="icon">&#xe65d;</span>
+      </f-cell>
+      <f-cell title="f-scroll-nav" link="flatui/f-scroll-nav">
+        <span class="demo-icon" slot="icon">&#xe65d;</span>
+      </f-cell>
     </f-group>
   </div>
 </template>

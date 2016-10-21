@@ -1,6 +1,8 @@
 <!--客户程序必须加!important属性优先级强制重写,而且不能加scoped-->
 <template>
-    <zpagenav :page="page" :page-size="pageSize" :total="total" :max-link="maxLink" :page-handler="pageHandler">
+    <div>
+        <zpagenav :page="page" :page-size="pageSize" :total="total" :max-link="maxLink" :page-handler="pageHandler">
+    </div>
 </template>
 
 <script>

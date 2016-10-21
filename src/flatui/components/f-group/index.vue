@@ -31,16 +31,13 @@ export default {
   }
   
   .f-group {
+    font-size: 16px;
     .weui_cells_title {
       color: @theme-color;
       background-color: @theme-color-assist;
       font-weight: bold;
       margin: 0;
       padding: .7em .5em .3em .5em;
-      font-size: 18px;
-    }
-    .weui_cells > a {
-      color: #000;
     }
   }
 </style>

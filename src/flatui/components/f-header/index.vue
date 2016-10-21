@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  @import '../../styles/variable.less';
+  @import '../../../styles/variable.less';
   .f-header {
     position: absolute;
     background-color: @x-header-background-color;

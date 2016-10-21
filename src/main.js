@@ -96,6 +96,8 @@ import AlertPlugin from './plugins/alert'
 // flatui demos
 import ZPagenav from 'vue-pagenav'
 Vue.use(ZPagenav)
+import FScrollNav from './flatui/demos/FScrollNav'
+import FSwipePage from './flatui/demos/FSwipePage'
 import FPageNav from './flatui/demos/FPageNav'
 import FButton from './flatui/demos/FButton'
 import FDivider from './flatui/demos/FDivider'
@@ -437,6 +439,12 @@ router.map({
   },
   '/flatui/f-page-nav': {
     component: FPageNav
+  },
+  '/flatui/f-swipe-page': {
+    component: FSwipePage
+  },
+  '/flatui/f-scroll-nav': {
+    component: FScrollNav
   }
 })
 

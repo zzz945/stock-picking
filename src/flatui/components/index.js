@@ -7,6 +7,8 @@ import FCell from './f-cell'
 import FGroup from './f-group'
 import FInlineDesc from './f-inline-desc'
 import FPageNav from './f-page-nav'
+import { FScrollNav, FScrollNavItem } from './f-scroll-nav'
+import FHeader from './f-header'
 
 const VueFlatui = {
   FButton,
@@ -16,6 +18,9 @@ const VueFlatui = {
   FCell,
   FGroup,
   FInlineDesc,
-  FPageNav
+  FPageNav,
+  FScrollNav,
+  FScrollNavItem,
+  FHeader
 }
 module.exports = VueFlatui

@@ -1,10 +1,10 @@
 <template>
-  <div style="height:100%;">
+  <div class="app-bd">
     <loading :show="isLoading" position="absolute"></loading>
     <view-box v-ref:view-box>
       <!--header slot-->
-      <div class="vux-demo-header-box" slot="header">
-        <x-header class="flat-header" :left-options="leftOptions" :transition="headerTransition" :title="title" @on-click-title="scrollTop"></x-header>
+      <div class="header-box" slot="header">
+        <f-header class="flat-header" :left-options="leftOptions" :transition="headerTransition" :title="title" @on-click-title="scrollTop"></f-header>
       </div>
       <!--default slot-->
       <router-view :transition="'vux-pop-' + (direction === 'forward' ? 'in' : 'out')"></router-view>
@@ -33,8 +33,8 @@
 
 <script>
 import store from './vuex/store'
-import { Loading, ViewBox, XHeader } from './components'
-import { FTabbar, FTabbarItem } from './flatui/components'
+import { Loading, ViewBox } from './components'
+import { FTabbar, FTabbarItem, FHeader } from './flatui/components'
 import Vconsole from 'vconsole'
 
 export default {
@@ -43,7 +43,7 @@ export default {
     FTabbarItem,
     Loading,
     ViewBox,
-    XHeader,
+    FHeader,
     Vconsole
   },
   store: store,
@@ -120,18 +120,19 @@ export default {
     transform: translate3d(100%, 0, 0);
   }
   
-  .vux-demo-header-box {
-    z-index: 100;
-    position: absolute;
+  .app-bd {
+    height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
-    .flat-header {
+    .f-header {
+      z-index: 100!important;
+      height: 32px!important;
+      font-size: 16px!important;
+      left: 0!important;
+      top: 0!important;
     }
-  }
-  
-  .weui_tab_bd {
-    padding-top: 46px;
+    .weui_tab_bd {
+      padding-top: 32px!important;
+    }
   }
   /**
 * vue-router transition
